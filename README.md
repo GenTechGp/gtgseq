@@ -28,7 +28,7 @@ Structure:
   ....
 ```
 
-Downloading a file can be done using the web browser; a CLI tool such as wget, curl or axel; or, aws cli. Downloading through aws cli is faster and recommeneded, especially for larger files.
+Downloading a file can be done using the web browser; a CLI tool such as wget, curl or axel; or, aws cli. Downloading through aws cli is faster and recommended, especially for larger files.
 
 Example using wget:
 ```
