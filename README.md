@@ -42,6 +42,8 @@ aws s3 cp --no-sign-request s3://gtgseq/ont-r10-dna/NA24385/raw/PGXX22394_reads.
 
 If you are doing your compute on AWS or if you have a very-high bandwidth and very-low latency Internet connection, you may mount the S3 bucket and then directly access as explained [here](docs/mount.md).
 
+Datasets are explained [here](docs/data.md).
+
 # Acknowledgement
 
 AWS Open Data Sponsorship Program for generously hosting this open data.
