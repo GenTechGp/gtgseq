@@ -47,6 +47,7 @@ source ./venv3/bin/activate
 buttery-eel  -g /path/to/ont-guppy/bin/  --config dna_r9.4.1_450bps_hac.cfg --device 'cuda:all' -i s3/ont-r10-dna/NA24385/raw/PGXX22394_reads.blow5 -o  reads.fastq --port 5555  --use_tcp
 ```
 
+Make sure you invoke `watch -n0 nvidia-smi` and monitor the GPU utilisation for a while to verify if there are not too many gaps with a 0% utilisation. Such gaps mean that your GPUs can process much faster than what your internet connection can server, thus you are better off downloading the BLOW5 to a local drive first.
 
 ## Example: Basecalling a subset of reads without downloading the whole BLOW5
 
