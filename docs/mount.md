@@ -55,7 +55,7 @@ For this you will need [slow5tools](https://github.com/hasindu2008/slow5tools), 
 
 ```bash
 # extract the list of read IDs that map to chrX:147,910,000–147,950,000 using samtools and bash commands
-samtools view s3/ont-r10-dna/NA24385/raw/PGXX22394_reads.blow5 chrX:147,910,000–147,950,000 | cut -f 1 | sort -u > read_ids.txt
+samtools view s3/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac_mm217.bam chrX:147,910,000-147,950,000 | cut -f 1 | sort -u > read_ids.txt
 
 # extract the raw reads from the BLOW5 file 
 slow5tools get --list read_ids.txt s3/ont-r10-dna/NA24385/raw/PGXX22394_reads.blow5 -o selected_reads.blow5
@@ -64,9 +64,11 @@ slow5tools get --list read_ids.txt s3/ont-r10-dna/NA24385/raw/PGXX22394_reads.bl
 buttery-eel  -g /path/to/ont-guppy/bin/  --config dna_r9.4.1_450bps_sup.cfg --device 'cuda:all' -i selected_reads.blow5 -o  selected_reads.fastq --port 5555  --use_tcp
 ```
 
+On a system connected to Internet with a 1 Gbps connection at Garvan Institute, it took ~10s for samtools and slow5tools get took ~5 minutes. This is opposed to to ~3 hours that would have been required to download the whole ~1TB dataset.
+
 Note that slow5tools will load the index to the memory first which is around ~1GB. Then it will fetch requested records. 
 If you have multiple regions, it is recommended that you batch all in to one list and invoke slow5tools once, so that the index is read/downloaded  only once.
-Alternatively, you can manually download the index and create a symbolic link to the BLOW5 file as below:
+Alternatively, you can manually download the index and create a symbolic link to the BLOW5 file and then use slow5tools get as many times as you like.
 
 ```
 # copy the index
@@ -79,4 +81,15 @@ ln -s s3/ont-r10-dna/NA24385/raw/PGXX22394_reads.blow5 ./PGXX22394_reads.blow5
 slow5tools get --list read_ids.txt ./PGXX22394_reads.blow5 -o selected_reads.blow5
 ```
 
+The ~5 minutes for slow5tools get above, now dropped to ~4 minutes. 
+
+Note that s3fs is not very efficient, but this is proof of concept how partial downloads are possible with BLOW5. Using the S3 API will make it much faster, which we expect to do in future.
+
+Likewise, if you want to fetch a batch of reads from an existing fastq.gz file, you can use a similar apprach with samtools:
+```
+samtools faidx -r read_ids.txt s3/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac.fastq.gz > selected_reads.fastq
+```
+Took around 4.5 mins on the same system mentioned above.
+
+Note that random access like this requires the necessary index files to reside on the S3 bucket next to their correspnding files. For a .blow5 this is the .blow5.idx, for a .bam file the .bam.bai, and for a bgzip compressed fastq.gz, the fastq.gz.gzi and fastq.gz.fai.
 
