@@ -14,7 +14,14 @@ Structure:
   |  |  |_PGXX22394_reads.blow5.idx
   |  |_ analyses
   |     |_basecalls
+  |       |_guppy642hac
+  |         |_PGXX22394_guppy642hac.fastq.gz
+  |         |_PGXX22394_guppy642hac_mm217.bam
+  |         |_PGXX22394_guppy642hac_mm217.bam.bai 
   |     |_methcalls
+  |       |_f5c12
+  |       |  |_PGXX22394_guppy642hac_mm217_f5c12_mfreq.tsv.gz
+  |       |_...dorado_remora?
   |_......... 
   
 - pb-revio
