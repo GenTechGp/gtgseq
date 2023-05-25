@@ -2,7 +2,7 @@
 
 You can browser browse the gtgseq AWS S3 bucket by following [https://gtgseq.s3.amazonaws.com/index.html](https://gtgseq.s3.amazonaws.com/index.html) on your broswer. Alternatively, you can use the aws cli:
 ```
-aws s3 ls s3://gtgseq/
+aws s3 ls --no-sign-request s3://gtgseq/
 ```
 
 Structure:
