@@ -57,6 +57,9 @@ aws s3 cp --no-sign-request s3://gtgseq/ont-r10-dna/NA24385/raw/PGXX22394_reads.
 
 If you are doing your compute on AWS or if you have a very-high bandwidth and very-low latency Internet connection, you may mount the S3 bucket and then directly access as explained [here](docs/mount.md).
 
+# Other public datasets
+
+If you are interested in the previous nanopore chemistry R9.4.1, links to such data is available [here](https://github.com/hasindu2008/seq/#ont-r941-chemistry). 
 
 # Acknowledgement
 
