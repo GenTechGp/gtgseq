@@ -2,7 +2,7 @@
 
 ## Setting up s3fs mount
 
-If you are doing your compute on AWS or if you have a very-high bandwidth and very-low latency Internet connection, given below is a trick to simply mounting the S3 bucket and then directly basecalling. This eliminates the need to download the BLOW5 file.
+If you are doing your compute on AWS or if you have a very-high bandwidth and very-low latency Internet connection, given below is a method to simply mounting the S3 bucket and then directly basecalling. This eliminates the need to download the BLOW5 file. A more efficient method that directly uses the s3 API for BLWO5 is planned to be developed.
 
 First install s3fs and then mount the s3 public bucket:
 
