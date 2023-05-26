@@ -23,17 +23,17 @@
   - basecalled with Guppy 6.4.2 through [buttery-eel](https://github.com/Psy-Fer/buttery-eel). 
   - model: dna_r10.4.1_e8.2_400bps_hac_prom.cfg
   - only reads that passed the qscore filter threshold 9 are included
-    - FASTQ: https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac.fastq.gz
-    - FASTQ index:  https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac.fastq.gz.gzi and https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac.fastq.fai
+    - FASTQ: [PGXX22394_guppy642hac.fastq.gz](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac.fastq.gz)
+    - FASTQ index:  [PGXX22394_guppy642hac.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac.fastq.gz.gzi) and [PGXX22394_guppy642hac.fastq.fai](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac.fastq.fai)
   - mapped with minimap2 2.17 against hg38noAlt with map-ont preset
-    - BAM: https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac_mm217.bam
-    - BAM index: https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac_mm217.bam.bai
+    - BAM: [PGXX22394_guppy642hac_mm217.bam](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac_mm217.bam)
+    - BAM index: [PGXX22394_guppy642hac_mm217.bam.bai](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac_mm217.bam.bai)
 
 ### modcalls
 
 - f5c 1.2 CpG methylation frequencies
   - PGXX22394_guppy642hac_mm217.bam and PGXX22394_guppy642hac.fastq.gz used as input 
-  - bgzip compressed methylation freqencies: https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/modcalls/f5c12/PGXX22394_guppy642hac_mm217_f5c12_mfreq.tsv.gz
+  - bgzip compressed methylation freqencies: [PGXX22394_guppy642hac_mm217_f5c12_mfreq.tsv.gz](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/modcalls/f5c12/PGXX22394_guppy642hac_mm217_f5c12_mfreq.tsv.gz)
 
 ## NA12878 (HG001) PromethION data (~30X)
 
@@ -57,14 +57,14 @@
   - basecalled with Guppy 6.4.2 through [buttery-eel](https://github.com/Psy-Fer/buttery-eel). 
   - model: dna_r10.4.1_e8.2_400bps_hac_prom.cfg
   - only reads that passed the qscore filter threshold 9 are included
-    - FASTQ: https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac.fastq.gz
-    - FASTQ index:  https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac.fastq.gz.gzi and https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac.fastq.fai
+    - FASTQ: [PGXXHX230142_guppy642hac.fastq.gz](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac.fastq.gz)
+    - FASTQ index:  [PGXXHX230142_guppy642hac.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac.fastq.gz.gzi) and [PGXXHX230142_guppy642hac.fastq.fai](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac.fastq.fai)
   - mapped with minimap2 2.17 against hg38noAlt with map-ont preset
-    - BAM: https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac_mm217.bam
-    - BAM index: https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac_mm217.bam.bai
+    - BAM: [PGXXHX230142_guppy642hac_mm217.bam](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac_mm217.bam)
+    - BAM index: [PGXXHX230142_guppy642hac_mm217.bam.bai])https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac_mm217.bam.bai)
 
 ### modcalls
 
 - f5c 1.2 CpG methylation frequencies
   - PGXX22394_guppy642hac_mm217.bam and PGXX22394_guppy642hac.fastq.gz used as input 
-  - bgzip compressed methylation freqencies: https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/modcalls/f5c12/PGXXHX230142_guppy642hac_mm217_f5c12_mfreq.tsv.gz
+  - bgzip compressed methylation freqencies: [PGXXHX230142_guppy642hac_mm217_f5c12_mfreq.tsv.gz](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/modcalls/f5c12/PGXXHX230142_guppy642hac_mm217_f5c12_mfreq.tsv.gz)
