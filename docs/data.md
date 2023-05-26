@@ -61,7 +61,7 @@
     - FASTQ index:  [PGXXHX230142_guppy642hac.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac.fastq.gz.gzi) and [PGXXHX230142_guppy642hac.fastq.fai](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac.fastq.fai)
   - mapped with minimap2 2.17 against hg38noAlt with map-ont preset
     - BAM: [PGXXHX230142_guppy642hac_mm217.bam](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac_mm217.bam)
-    - BAM index: [PGXXHX230142_guppy642hac_mm217.bam.bai])https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac_mm217.bam.bai)
+    - BAM index: [PGXXHX230142_guppy642hac_mm217.bam.bai](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/basecalls/guppy642hac/PGXXHX230142_guppy642hac_mm217.bam.bai)
 
 ### modcalls
 
