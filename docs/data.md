@@ -2,7 +2,7 @@
 
 ## NA24385 (HG002) PromethION data (~30X)
 
-- info: sheared DNA libraries (~17Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell was used to generate ~30X genome coverage.
+- Info: sheared DNA libraries (~17Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell was used to generate ~30X genome coverage.
 - Notes: the complete dataset with 15.3M reads (102.2 Gbases). SRA: https://www.ncbi.nlm.nih.gov/sra/?term=SRS16575602
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA24385/
 
@@ -37,6 +37,7 @@
 
 ## NA12878 (HG001) PromethION data (~30X)
 
+- Info: Sheared DNA libraries (~30Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell was used to generate ~30X genome coverage.
 - Notes:  the complete dataset with ~11M reads
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA12878/
 
