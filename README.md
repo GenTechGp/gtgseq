@@ -1,6 +1,6 @@
 # Garvan Institute Long Read Sequencing Benchmark Data
 
-This repository contains the documentation for the long read sequencing data from the Genomic Technologies Group at Garvan Institute of Medical Research.
+This repository contains the documentation for the long read sequencing benchmark data from the [Genomic Technologies Group at Garvan Institute of Medical Research](https://www.garvan.org.au/research/kinghorn-centre-for-clinical-genomics/research-programs/genomic-technologies).
 
 Currently, the dataset contains two reference datasets that will be useful for benchmarking and comparing bioinformatics tools for genome analysis. The two datasets are NA12878 (HG001) and NA24385 (HG002), sequenced on an Oxford Nanpopore Technologies (ONT) PromethION using the latest R10.4.1 flowcells. Raw signal data output by the sequencer is provided for these datasets in [BLOW5 format](https://www.nature.com/articles/s41587-021-01147-4), and can be rebasecalled when basecalling software updates bring accuracy and feature improvements over the years. Raw signal data is not only for rebasecalling, but also can be used for emerging bioinformatics tools that directly analyse raw signal data. We also provide the basecalled data alongside the raw signal data and will continue to provide updated basecalls when there is a major update to the basecalling software. 
 
@@ -15,7 +15,7 @@ aws s3 ls --no-sign-request s3://gtgseq/
 
 ## Structure
 
-An example of the directory structure in the AWS S3 bucket is given below, for the sample NA24385. The `raw` directory will contain the BLOW5 file and BLOW5 file index for random acesss. The `analyses` directory will contain data such as basecalls and modcalls. In this example, `basecalls` contain the default qscore passed high accuracy (hac) basecalls from Guppy 6.4.2 in bgzip compressed FASTQ format. Those reads aligned to the hg38_noAlt.fa reference using minimap2 2.14 is also available in BAM format. BAM index is also provided for region access. The `modcalls` contains the CpG methylation frequencies from f5c 1.2.
+An example of the directory structure in the AWS S3 bucket is given below, for the sample NA24385. The `raw` directory will contain the BLOW5 file and BLOW5 file index for random acesss. The `analyses` directory will contain data such as basecalls and modcalls. In this example, `basecalls` contain the default qscore passed high accuracy (hac) basecalls from Guppy 6.4.2 in bgzip compressed FASTQ format. Those reads aligned to the hg38 reference genome (without alternate contigs) using minimap2 2.14 is also available in BAM format. BAM index is also provided for region access. The `modcalls` contains the CpG methylation frequencies from f5c 1.2.
 
 ```
 - ont-r10-dna
