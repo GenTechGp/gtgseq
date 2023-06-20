@@ -1,4 +1,4 @@
-# Open Data from Genomic Technologies Group
+# Garvan Institute Long Read Sequencing Benchmark Data
 
 This repository contains the documentation for the open data from the Genomic Technologies Group at Garvan Institute of Medical Research.
 
