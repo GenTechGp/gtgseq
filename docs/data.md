@@ -1,8 +1,45 @@
-# ONT R10.4.1 chemistry - DNA data
+# ONT R10.4.1 5kHz chemistry - DNA data
+
+## NA24385 (HG002) PromethION data (~20X)
+
+- Info: sheared DNA libraries (~17Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 5kHz sampling rate was used to generate ~20X genome coverage.
+- Notes: the complete dataset with 12.5M reads (51.211 Gbases). 
+- Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385/
+
+### raw signal data:
+- [BLOW5](https://www.nature.com/articles/s41587-021-01147-4) file 
+  - direct link: [PGXXXX230339_reads.blow5](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/raw/PGXXXX230339_reads.blow5)  
+  - s3 location: s3://gtgseq/ont-r10-5khz-dna/NA24385/raw/PGXXXX230339_reads.blow5
+  - md5sum: ``
+- BLOW5 index
+  - direct link: [PGXXXX230339_reads.blow5.idx](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/raw/PGXXXX230339_reads.blow5.idx) 
+  - s3 location: s3://gtgseq/ont-r10-5khz-dna/NA24385/raw/PGXXXX230339_reads.blow5.idx
+  - md5sum: `84a1b5317f0e92f73143070481df8fe3`
+
+### basecalls:
+
+- Guppy 6.5.7 high accuracy
+  - basecalled with Guppy 6.5.7 through [buttery-eel](https://github.com/Psy-Fer/buttery-eel). 
+  - model: dna_r10.4.1_e8.2_400bps_5khz_hac_prom.cfg
+  - only reads that passed the qscore filter threshold 9 are included
+    - FASTQ: [PGXXXX230339_guppy657hac.fastq.gz](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac.fastq.gz)
+    - FASTQ index:  [PGXXXX230339_guppy657hac.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac.fastq.gz.gzi) and [PGXXXX230339_guppy657hac.fastq.fai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac_guppy642hac.fastq.fai)
+  - mapped with minimap2 2.26 against hg38noAlt with map-ont preset
+    - BAM: [PGXXXX230339_guppy657hac_mm226.bam](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac_mm226.bam)
+    - BAM index: [PGXXXX230339_guppy657hac_mm226.bam.bai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac_mm226.bam.bai)
+
+### modcalls
+
+- f5c 1.3 CpG methylation frequencies
+  - PGXXXX230339_guppy657hac_mm226.bam and PGXXXX230339_guppy657hac.fastq.gz used as input 
+  - bgzip compressed methylation freqencies: [PGXXXX230339_guppy657hac_mm226_f5c13_mfreq.tsv.gz](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/modcalls/f5c13/PGXXXX230339_guppy657hac_mm226_f5c13_mfreq.tsv.gz)
+
+
+# ONT R10.4.1 4kHz chemistry - DNA data
 
 ## NA24385 (HG002) PromethION data (~30X)
 
-- Info: sheared DNA libraries (~17Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell was used to generate ~30X genome coverage.
+- Info: sheared DNA libraries (~17Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 4KHz sampling rate was used to generate ~30X genome coverage.
 - Notes: the complete dataset with 15.3M reads (102.2 Gbases). Also available on SRA: [SRS16575602](https://www.ncbi.nlm.nih.gov/sra/?term=SRS16575602).
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA24385/
 
@@ -15,7 +52,8 @@
   - direct link: [PGXX22394_reads.blow5.idx](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/raw/PGXX22394_reads.blow5.idx) 
   - s3 location: s3://gtgseq/ont-r10-dna/NA24385/raw/PGXX22394_reads.blow5.idx
   - md5sum: `1e11735c10cf63edc4a7114f010cc472`
-- Also available on SRA: [SRR23215366](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR23215366&display=data-access) 
+- Also available on SRA: [SRR23215366](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=SRR23215366&display=data-access)
+- Also available on ENA: [ERR11777845](https://www.ebi.ac.uk/ena/browser/view/ERR11777845) 
 
 ### basecalls:
 
@@ -33,12 +71,12 @@
 
 - f5c 1.2 CpG methylation frequencies
   - PGXX22394_guppy642hac_mm217.bam and PGXX22394_guppy642hac.fastq.gz used as input 
-  - bgzip compressed methylation freqencies: [PGXX22394_guppy642hac_mm217_f5c12_mfreq.tsv.gz](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/modcalls/f5c12/PGXX22394_guppy642hac_mm217_f5c12_mfreq.tsv.gz)
+  - bgzip compressed methylation frequencies: [PGXX22394_guppy642hac_mm217_f5c12_mfreq.tsv.gz](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/modcalls/f5c12/PGXX22394_guppy642hac_mm217_f5c12_mfreq.tsv.gz)
 
-## NA12878 (HG001) PromethION data (~30X)
+## NA12878 (HG001) PromethION data (~20X)
 
-- Info: Sheared DNA libraries (~30Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell was used to generate ~30X genome coverage.
-- Notes:  the complete dataset with ~11M reads
+- Info: Sheared DNA libraries (~30Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 4KHz sampling rate was used to generate ~30X genome coverage.
+- Notes:  the complete dataset with ~11M reads (70.5 Gbases)
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA12878/
 
 ### raw signal data:
@@ -51,6 +89,7 @@
   - direct link: [PGXXHX230142_reads.blow5.idx](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/raw/PGXXHX230142_reads.blow5.idx)
   - s3 location: s3://gtgseq/ont-r10-dna/NA12878/raw/PGXXHX230142_reads.blow5.idx
   - md5sum: `a5659f829b9410616391427b2526b853`
+- Also available on ENA: [ERR11777844](https://www.ebi.ac.uk/ena/browser/view/ERR11777844) 
 
 ### basecalls:
 
