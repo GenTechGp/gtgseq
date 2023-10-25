@@ -1,11 +1,11 @@
 
 # Fetching subsets with slow5curl and samtools
 
-If you are intending on processing a specific subset of a remote BLOW5 file, slow5curl will let you fetch just this subset, without needing to download the whole thing locally. Using this tool is currently much more efficient than mounting an S3 bucket. Note that random access like this requires the necessary index files to reside on the remote directory next to their correspnding files. For a .blow5 this is the .blow5.idx, for a .bam file the .bam.bai, and for a bgzip compressed fastq.gz, the fastq.gz.gzi and fastq.gz.fai.
+If you intend on processing a specific subset of a remote BLOW5 file, slow5curl will let you fetch just this subset, without needing to download the whole thing locally. Using this tool is currently much more efficient than mounting an S3 bucket. Note that random access like this requires the necessary index files to reside in the remote directory next to their corresponding files. For a .blow5 this is the .blow5.idx, for a .bam file the .bam.bai, and for a bgzip compressed fastq.gz, the fastq.gz.gzi and fastq.gz.fai.
 
 If you are looking to fetch multiple subsets from the same BLOW5 file, we recommend caching the index file locally to speed up the download. For more information: [slow5curl commands and options](https://bonsonw.github.io/slow5curl/commands.html).
 
-## Installing neccessary tools
+## Installing necessary tools
 
 Building [slow5curl](https://github.com/BonsonW/slow5curl) from the repo:
 
@@ -24,7 +24,7 @@ Building [samtools](http://www.htslib.org/download/) from release:
 wget https://github.com/samtools/samtools/releases/download/1.18/samtools-1.18.tar.bz2
 tar -vxjf samtools-1.18.tar.bz2
 cd samtools-1.18
-./configure --prefix=/where/to/install
+./configure --prefix=/where/to/install   # make sure libcurl is installed on your system so that samtools build with curl enabled
 make
 make install
 ```
