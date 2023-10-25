@@ -23,8 +23,8 @@ Building [samtools](http://www.htslib.org/download/) from release:
 ```bash
 wget https://github.com/samtools/samtools/releases/download/1.18/samtools-1.18.tar.bz2
 tar -vxjf samtools-1.18.tar.bz2
-./configure --prefix=/where/to/install
 cd samtools-1.18
+./configure --prefix=/where/to/install
 make
 make install
 ```
