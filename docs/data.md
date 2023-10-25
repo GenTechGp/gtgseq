@@ -2,7 +2,7 @@
 
 ## NA24385 (HG002) PromethION data (~20X)
 
-- Info: sheared DNA libraries (~17Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 5kHz sampling rate was used to generate ~20X genome coverage.
+- Info: sheared DNA libraries (~25Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 5kHz sampling rate was used to generate ~20X genome coverage.
 - Notes: the complete dataset with 12.5M reads (51.211 Gbases). 
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385/
 
