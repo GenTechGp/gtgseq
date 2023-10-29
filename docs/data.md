@@ -3,7 +3,8 @@
 ## NA24385 (HG002) PromethION data (~20X)
 
 - Info: sheared DNA libraries (~25Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 5kHz sampling rate was used to generate ~20X genome coverage.
-- Notes: the complete dataset with 12.5M reads (51.211 Gbases). 
+- Notes: the complete dataset with 12.5M reads (51.211 Gbases).
+- Reads lengths: 1.5 kbases median, 4.1 kbases mean, 288.9 kbases max
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385/
 
 ### raw signal data:
@@ -41,6 +42,7 @@
 
 - Info: sheared DNA libraries (~17Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 4KHz sampling rate was used to generate ~30X genome coverage.
 - Notes: the complete dataset with 15.3M reads (102.2 Gbases). Also available on SRA: [SRS16575602](https://www.ncbi.nlm.nih.gov/sra/?term=SRS16575602).
+- Reads lengths: 6.5 kbases median, 7.3 kbases mean, 636.6 kbases max
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA24385/
 
 ### raw signal data:
@@ -77,6 +79,7 @@
 
 - Info: Sheared DNA libraries (~30Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 4KHz sampling rate was used to generate ~30X genome coverage.
 - Notes:  the complete dataset with ~11M reads (70.5 Gbases)
+- Reads lengths: 4.5 kbases median, 7.6 kbases mean, 235.1 kbases max
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA12878/
 
 ### raw signal data:
