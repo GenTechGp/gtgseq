@@ -69,7 +69,7 @@ aws s3 cp --no-sign-request s3://gtgseq/ont-r10-dna/NA24385/raw/PGXX22394_reads.
 
 # Direct Acesses
 
-If can directly access https links using samtools (if compiled with curl support) for FASTQ and BAM; and, slow5curl for BLOW5. Please refer to the instructions [here](docs/slow5curl.md) 
+If can directly access https links using samtools (if compiled with curl support) for FASTQ and BAM; and, [slow5curl](https://github.com/BonsonW/slow5curl) for BLOW5. Please refer to the instructions [here](docs/slow5curl.md). 
 
 #  Mounted Access
 
