@@ -32,7 +32,8 @@ make install
 ---
 
 ## Example: Fetching a subset of reads
-Assume you need to super accuracy basecall the reads belonging to the region chrX:147,910,000–147,950,000 without downloading a terabyte of data.
+
+Assume you want to get the raw signal reads from the genomic region chrX:147,910,000–147,950,000 without downloading a terabyte of data. You can use samtools to first grab the necessary read IDs from a remote BAM file and then slow5curl to fetch those reads from a remote BLOW5 file. Steps are as below:
 
 ```bash
 # extract the list of read IDs that map to chrX:147,910,000–147,950,000 using samtools and bash commands
@@ -42,8 +43,16 @@ samtools view https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basec
 /path/to/slow5curl get --list read_ids.txt https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/raw/PGXX22394_reads.blow5 -o selected_reads.blow5
 ```
 
+If you want to fetch reads for multiple genomic regions, you can provide the list of coordinates in BED format to samtools:
+```
+samtools view https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basecalls/guppy642hac/PGXX22394_guppy642hac_mm217.bam -L regions.bed -M | cut -f1 | sort -u > read_ids.txt 
+```
+Then you can provide this list to slow5curl to get all the necessary reads in one go.
+
+
 ## Example: Fetching and basecalling a subset of reads
-For this you will need [buttery-eel](https://github.com/Psy-Fer/buttery-eel) installed. Like before, we will need to extract the reads from the bam file and then fetch it.
+
+Assume you need to super accuracy basecall the reads belonging to the region chrX:147,910,000–147,950,000 without downloading a terabyte of data. For this you will need [buttery-eel](https://github.com/Psy-Fer/buttery-eel) installed. Like before, we will need to extract the reads from the bam file and then fetch it.
 
 ```bash
 # extract the list of read IDs that map to chrX:147,910,000–147,950,000 using samtools and bash commands
