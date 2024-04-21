@@ -94,7 +94,7 @@
 - [BLOW5](https://www.nature.com/articles/s41587-021-01147-4) file 
   - direct link: [PNXRXX240011_reads.blow5](https://gtgseq.s3.amazonaws.com/ont-rna004-rna/UHR/raw/PNXRXX240011_reads.blow5)  
   - s3 location: s3://gtgseq/ont-rna004-rna/UHR/raw/PNXRXX240011_reads.blow5
-  - md5sum: ``
+  - md5sum: `671be5b88f2b54a9e22ced351493b7a9`
 - BLOW5 index
   - direct link: [PNXRXX240011_reads.blow5.idx](https://gtgseq.s3.amazonaws.com/ont-rna004-rna/UHR/raw/PNXRXX240011_reads.blow5.idx) 
   - s3 location: s3://gtgseq/ont-rna004-rna/UHR/raw/PNXRXX240011_reads.blow5.idx
