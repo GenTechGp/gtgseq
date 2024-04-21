@@ -1,4 +1,50 @@
+# Table of Contents
+- [ONT R10.4.1 5kHz chemistry - DNA data](#ont-r1041-5khz-chemistry---dna-data)
+  - [NA24385 (HG002) PromethION data (~30X)](#na24385-hg002-promethion-data-30x)
+  - [NA24385 (HG002) PromethION data (~20X)](#na24385-hg002-promethion-data-20x)
+- [ONT RNA004 chemistry - RNA data](#ont-rna004-chemistry---rna-data)
+  - [UHR PromethION data](#uhr-promethion-data)
+- [ONT R10.4.1 4kHz chemistry - DNA data](#ont-r1041-5khz-chemistry---dna-data)
+  - [NA24385 (HG002) PromethION data (~30X)](#na24385-hg002-promethion-data-30x)
+  - [NA12878 (HG001) PromethION data (~20X)](#na12878-hg001-promethion-data-20x)
+
 # ONT R10.4.1 5kHz chemistry - DNA data
+
+## NA24385 (HG002) PromethION data (~30X)
+
+- Info: <add> sheared DNA libraries (~25Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 5kHz sampling rate was used to generate ~30X genome coverage.
+- Notes: the complete dataset with xx.xM reads (xx.xxx Gbases).
+- Reads lengths: x.x kbases median, x.x kbases mean, xxx.x kbases max
+- Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385_2/
+
+### raw signal data:
+- [BLOW5](https://www.nature.com/articles/s41587-021-01147-4) file 
+  - direct link: [PGXXSX240041_reads.blow5](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/raw/PGXXSX240041_reads.blow5)  
+  - s3 location: s3://gtgseq/ont-r10-5khz-dna/NA24385_2/raw/PGXXSX240041_reads.blow5
+  - md5sum: ``
+- BLOW5 index
+  - direct link: [PGXXSX240041_reads.blow5.idx](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/raw/PGXXSX240041_reads.blow5.idx) 
+  - s3 location: s3://gtgseq/ont-r10-5khz-dna/NA24385_2/raw/PGXXSX240041_reads.blow5.idx
+  - md5sum: ``
+
+### basecalls:
+
+- Guppy 6.5.7 high accuracy
+  - basecalled with Guppy 6.5.7 through [buttery-eel](https://github.com/Psy-Fer/buttery-eel). 
+  - model: dna_r10.4.1_e8.2_400bps_5khz_hac_prom.cfg
+  - only reads that passed the qscore filter threshold 9 are included
+    - FASTQ: [PGXXSX240041_guppy657hac.fastq.gz](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac.fastq.gz)
+    - FASTQ index:  [PGXXSX240041_guppy657hac.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac.fastq.gz.gzi) and [PGXXSX240041_guppy657hac.fastq.fai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac_guppy642hac.fastq.fai)
+  - mapped with minimap2 2.26 against hg38noAlt with map-ont preset
+    - BAM: [PGXXSX240041_guppy657hac_mm226.bam](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac_mm226.bam)
+    - BAM index: [PGXXSX240041_guppy657hac_mm226.bam.bai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac_mm226.bam.bai)
+
+### modcalls
+
+- f5c 1.3 CpG methylation frequencies
+  - PGXXSX240041_guppy657hac_mm226.bam and PGXXSX240041_guppy657hac.fastq.gz used as input 
+  - bgzip compressed methylation freqencies: [PGXXSX240041_guppy657hac_mm226_f5c13_mfreq.tsv.gz](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/modcalls/f5c13/PGXXSX240041_guppy657hac_mm226_f5c13_mfreq.tsv.gz)
+
 
 ## NA24385 (HG002) PromethION data (~20X)
 
@@ -35,6 +81,36 @@
   - PGXXXX230339_guppy657hac_mm226.bam and PGXXXX230339_guppy657hac.fastq.gz used as input 
   - bgzip compressed methylation freqencies: [PGXXXX230339_guppy657hac_mm226_f5c13_mfreq.tsv.gz](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/modcalls/f5c13/PGXXXX230339_guppy657hac_mm226_f5c13_mfreq.tsv.gz)
 
+# ONT RNA004 chemistry - RNA data
+
+## UHR PromethION data 
+
+- Info: Universal human reference RNA (48 ng polyA enriched RNA) was prepared using the SQK-RNA004 kit from Nanopore. Prepared library (48 ng) was loaded onto a FLO-PRO004 flow cell.
+- Notes: the complete dataset with 15.4M reads (17.554 Gbases).
+- Reads lengths: 864 bases median, 1.137 kbases mean, 321 kbases max
+- Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-rna004-rna/UHR/
+
+### raw signal data:
+- [BLOW5](https://www.nature.com/articles/s41587-021-01147-4) file 
+  - direct link: [PNXRXX240011_reads.blow5](https://gtgseq.s3.amazonaws.com/ont-rna004-rna/UHR/raw/PNXRXX240011_reads.blow5)  
+  - s3 location: s3://gtgseq/ont-rna004-rna/UHR/raw/PNXRXX240011_reads.blow5
+  - md5sum: ``
+- BLOW5 index
+  - direct link: [PNXRXX240011_reads.blow5.idx](https://gtgseq.s3.amazonaws.com/ont-rna004-rna/UHR/raw/PNXRXX240011_reads.blow5.idx) 
+  - s3 location: s3://gtgseq/ont-rna004-rna/UHR/raw/PNXRXX240011_reads.blow5.idx
+  - md5sum: `e3ea326d300a22008e2821ce10d17649`
+
+### basecalls:
+
+- Dorado server 7.2.13 super accuracy
+  - basecalled with Dorado server 7.2.13 through [buttery-eel](https://github.com/Psy-Fer/buttery-eel). 
+  - model: rna_rp4_130bps_sup.cfg
+  - only reads that passed the qscore filter threshold 10 are included
+    - FASTQ: [PNXRXX240011_dorado7213sup.fastq.gz](https://gtgseq.s3.amazonaws.com/ont-rna004-rna/UHR/analyses/basecalls/dorado7213sup/PNXRXX240011_dorado7213sup.fastq.gz)
+    - FASTQ index:  [PNXRXX240011_dorado7213sup.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-rna004-rna/UHR/analyses/basecalls/dorado7213sup/PNXRXX240011_dorado7213sup.fastq.gz.gzi) and [PNXRXX240011_dorado7213sup.fastq.fai](https://gtgseq.s3.amazonaws.com/ont-rna004-rna/UHR/analyses/basecalls/dorado7213sup/PNXRXX240011_dorado7213sup.fastq.fai)
+  - mapped with minimap2 2.26 against gencode.v40.transcripts with map-ont preset and `-uf` 
+    - BAM: [PNXRXX240011_dorado7213sup_mm226.bam](https://gtgseq.s3.amazonaws.com/ont-rna004-rna/UHR/analyses/basecalls/dorado7213sup/PNXRXX240011_dorado7213sup_mm226.bam)
+    - BAM index: [PNXRXX240011_dorado7213sup_mm226.bam.bai](https://gtgseq.s3.amazonaws.com/ont-rna004-rna/UHR/analyses/basecalls/dorado7213sup/PNXRXX240011_dorado7213sup_mm226.bam.bai)
 
 # ONT R10.4.1 4kHz chemistry - DNA data
 
