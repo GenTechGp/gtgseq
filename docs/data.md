@@ -1,6 +1,6 @@
 # Table of Contents
 - [ONT R10.4.1 5kHz chemistry - DNA data](#ont-r1041-5khz-chemistry---dna-data)
-  - [NA24385 (HG002) PromethION data (~30X)](#na24385-hg002-promethion-data-30x)
+  - [NA24385 (HG002) PromethION data (~40X)](#na24385-hg002-promethion-data-40x)
   - [NA24385 (HG002) PromethION data (~20X)](#na24385-hg002-promethion-data-20x)
 - [ONT RNA004 chemistry - RNA data](#ont-rna004-chemistry---rna-data)
   - [UHR PromethION data](#uhr-promethion-data)
@@ -10,11 +10,11 @@
 
 # ONT R10.4.1 5kHz chemistry - DNA data
 
-## NA24385 (HG002) PromethION data (~30X)
+## NA24385 (HG002) PromethION data (~40X)
 
 - Info: <add> sheared DNA libraries (~25Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 5kHz sampling rate was used to generate ~30X genome coverage.
-- Notes: the complete dataset with xx.xM reads (xx.xxx Gbases).
-- Reads lengths: x.x kbases median, x.x kbases mean, xxx.x kbases max
+- Notes: the complete dataset with 18.8M reads (130.494 Gbases).
+- Reads lengths: 2.7 kbases median, 6.9 kbases mean, 854.8 kbases max
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385_2/
 
 ### raw signal data:
