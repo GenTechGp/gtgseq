@@ -34,7 +34,7 @@
   - model: dna_r10.4.1_e8.2_400bps_5khz_hac_prom.cfg
   - only reads that passed the qscore filter threshold 9 are included
     - FASTQ: [PGXXSX240041_guppy657hac.fastq.gz](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac.fastq.gz)
-    - FASTQ index:  [PGXXSX240041_guppy657hac.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac.fastq.gz.gzi) and [PGXXSX240041_guppy657hac.fastq.gz.fai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac_guppy642hac.fastq.gz.fai)
+    - FASTQ index:  [PGXXSX240041_guppy657hac.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac.fastq.gz.gzi) and [PGXXSX240041_guppy657hac.fastq.gz.fai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac.fastq.gz.fai)
   - mapped with minimap2 2.26 against hg38noAlt with map-ont preset
     - BAM: [PGXXSX240041_guppy657hac_mm226.bam](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac_mm226.bam)
     - BAM index: [PGXXSX240041_guppy657hac_mm226.bam.bai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/analyses/basecalls/guppy657hac/PGXXSX240041_guppy657hac_mm226.bam.bai)
@@ -70,7 +70,7 @@
   - model: dna_r10.4.1_e8.2_400bps_5khz_hac_prom.cfg
   - only reads that passed the qscore filter threshold 9 are included
     - FASTQ: [PGXXXX230339_guppy657hac.fastq.gz](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac.fastq.gz)
-    - FASTQ index:  [PGXXXX230339_guppy657hac.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac.fastq.gz.gzi) and [PGXXXX230339_guppy657hac.fastq.gz.fai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac_guppy642hac.fastq.gz.fai)
+    - FASTQ index:  [PGXXXX230339_guppy657hac.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac.fastq.gz.gzi) and [PGXXXX230339_guppy657hac.fastq.gz.fai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac.fastq.gz.fai)
   - mapped with minimap2 2.26 against hg38noAlt with map-ont preset
     - BAM: [PGXXXX230339_guppy657hac_mm226.bam](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac_mm226.bam)
     - BAM index: [PGXXXX230339_guppy657hac_mm226.bam.bai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/analyses/basecalls/guppy657hac/PGXXXX230339_guppy657hac_mm226.bam.bai)
