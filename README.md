@@ -2,7 +2,9 @@
 
 This repository contains the documentation for the long read sequencing benchmark data from the [Genomic Technologies Group at Garvan Institute of Medical Research](https://www.garvan.org.au/research/kinghorn-centre-for-clinical-genomics/research-programs/genomic-technologies).
 
-The dataset contains reference samples that will be useful for benchmarking and comparing bioinformatics tools for genome analysis. Currently, there are two samples, which are NA12878 (HG001) and NA24385 (HG002), sequenced on an Oxford Nanpopore Technologies (ONT) PromethION using the latest R10.4.1 flowcells. Raw signal data output by the sequencer is provided for these datasets in [BLOW5 format](https://www.nature.com/articles/s41587-021-01147-4), and can be rebasecalled when basecalling software updates bring accuracy and feature improvements over the years. Raw signal data is not only for rebasecalling, but also can be used for emerging bioinformatics tools that directly analyse raw signal data. We also provide the basecalled data alongside the raw signal data and will continue to provide updated basecalls when there is a major update to the basecalling software. 
+The dataset contains reference samples that will be useful for benchmarking and comparing bioinformatics tools for genome analysis. Examples include: NA12878 (HG001) and NA24385 (HG002) sequenced on an Oxford Nanpopore Technologies (ONT) PromethION using the latest R10.4.1 flowcells; and, UHR RNA (direct-RNA) on an ONT PromethION using the latest RNA004 flowcells. The samples are detailed [here](docs/data.md), but make sure you first read the sections [Dataset location](#dataset-location), [Structure](#structure).
+
+Raw signal data output by the sequencer is provided for these datasets in [BLOW5 format](https://www.nature.com/articles/s41587-021-01147-4), and can be rebasecalled when basecalling software updates bring accuracy and feature improvements over the years. Raw signal data is not only for rebasecalling, but also can be used for emerging bioinformatics tools that directly analyse raw signal data. We also provide the basecalled data alongside the raw signal data and will continue to provide updated basecalls when there is a major update to the basecalling software. 
 
 In the future, we plan to extend this open dataset with additional samples, including sequencing runs from vendors other than ONT. 
  
@@ -13,16 +15,19 @@ You can browser browse the gtgseq AWS S3 bucket by following [https://gtgseq.s3.
 aws s3 ls --no-sign-request s3://gtgseq/
 ```
 
-There are two directories in the bucket and inside them you will find samples.
+There are three directories in the bucket and inside them you will find samples.
 ```
 - ont-r10-5khz-dna
   |_ NA24385
+  |_ NA24385_2
 - ont-r10-dna
   |_ NA24385
   |_ NA12878
+- ont-rna004-rna
+  |_ UHR
 ```
 
-`ont-r10-5khz-dna` contains data acquired with the latest 5KHz sampling rate, where as, `ont-r10-dna` contains legacy 4KHz sampling rate data.
+`ont-r10-5khz-dna` contains data acquired with the latest 5KHz sampling rate, where as, `ont-r10-dna` contains legacy 4KHz sampling rate data. `ont-rna004-rna` contains direct-RNA data from RNA004.
 
 
 ## Structure
