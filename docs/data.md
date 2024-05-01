@@ -1,4 +1,8 @@
-# Table of Contents
+# ONT R10.4.1 5kHz chemistry - DNA data
+
+Make sure to first go through the directory structure, file name conventions and downloading method documented [here](../README.md).
+
+## Table of Contents
 - [ONT R10.4.1 5kHz chemistry - DNA data](#ont-r1041-5khz-chemistry---dna-data)
   - [NA24385 (HG002) PromethION data (~40X)](#na24385-hg002-promethion-data-40x)
   - [NA24385 (HG002) PromethION data (~20X)](#na24385-hg002-promethion-data-20x)
@@ -8,11 +12,10 @@
   - [NA24385 (HG002) PromethION data (~30X)](#na24385-hg002-promethion-data-30x)
   - [NA12878 (HG001) PromethION data (~20X)](#na12878-hg001-promethion-data-20x)
 
-# ONT R10.4.1 5kHz chemistry - DNA data
 
 ## NA24385 (HG002) PromethION data (~40X)
 
-- Info: xxxxxx sheared DNA libraries (~xxKb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 5kHz sampling rate was used to generate ~40X genome coverage.
+- Info: HG002 (Coriell Institute, GM24385) was cultured in RPMI1640 (Gibco, 11875093) with 15% fetal bovine serum (Bovogen, SFBS-AU) at 37°C with 5% CO2. DNA was extracted using Nanobind CBB kit (PacBio, 102-301-900). DNA was sheared to ~33 kb using the Megaruptor 3 (Diagenode) and libraries prepared using SQK-LSK114 and sequenced on a R10.4.1 flow cell (Oxford Nanopore Technologies) at 5kHz sampling rate to generate ~40X genome coverage.
 - Notes: the complete dataset with 18.8M reads (130.494 Gbases).
 - Reads lengths: 2.7 kbases median, 6.9 kbases mean, 854.8 kbases max
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385_2/
