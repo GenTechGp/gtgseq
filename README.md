@@ -58,6 +58,8 @@ An example of the directory structure in the AWS S3 bucket is given below, for t
 
 Datasets and files are explained [here](docs/data.md) along with metadata.
 
+Also, you will note that there is a `misc` directory directly in S3 bucket root. This directory contains miscellaneous stuff such as subsets and readID lists based on mapping coordiates for some of the above datasets. They are briefly documented [here](docs/misc.md).
+
 #  Downloading
 
 Downloading a file can be done using the web browser; a CLI tool such as wget, curl or axel; or, aws cli. Downloading through aws cli is faster and recommended, especially for larger files.
