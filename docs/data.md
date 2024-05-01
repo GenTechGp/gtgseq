@@ -88,7 +88,7 @@ Make sure to first go through the directory structure, file name conventions and
 
 ## UHR PromethION data 
 
-- Info: Universal human reference RNA (48 ng polyA enriched RNA) was prepared using the SQK-RNA004 kit from Nanopore. Prepared library (48 ng) was loaded onto a FLO-PRO004 flow cell.
+- Info: Universal human reference RNA (300 ng polyA enriched RNA) was prepared using the SQK-RNA004 kit from Nanopore. Prepared library (48 ng) was loaded onto a FLO-PRO004RA flow cell.
 - Notes: the complete dataset with 15.4M reads (17.554 Gbases).
 - Reads lengths: 864 bases median, 1.137 kbases mean, 321 kbases max
 - Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-rna004-rna/UHR/
