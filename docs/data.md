@@ -29,6 +29,7 @@ Make sure to first go through the directory structure, file name conventions and
   - direct link: [PGXXSX240041_reads.blow5.idx](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_2/raw/PGXXSX240041_reads.blow5.idx) 
   - s3 location: s3://gtgseq/ont-r10-5khz-dna/NA24385_2/raw/PGXXSX240041_reads.blow5.idx
   - md5sum: `18ac205e53552bcb561ea5b3a55cd9b7`
+- Also available on ENA: [ERR12997168](https://www.ebi.ac.uk/ena/browser/view/ERR12997168) 
 
 ### basecalls:
 
@@ -65,6 +66,7 @@ Make sure to first go through the directory structure, file name conventions and
   - direct link: [PGXXXX230339_reads.blow5.idx](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385/raw/PGXXXX230339_reads.blow5.idx) 
   - s3 location: s3://gtgseq/ont-r10-5khz-dna/NA24385/raw/PGXXXX230339_reads.blow5.idx
   - md5sum: `84a1b5317f0e92f73143070481df8fe3`
+- Also available on ENA: [ERR12997167](https://www.ebi.ac.uk/ena/browser/view/ERR12997167) 
 
 ### basecalls:
 
@@ -102,6 +104,7 @@ Make sure to first go through the directory structure, file name conventions and
   - direct link: [PNXRXX240011_reads.blow5.idx](https://gtgseq.s3.amazonaws.com/ont-rna004-rna/UHR/raw/PNXRXX240011_reads.blow5.idx) 
   - s3 location: s3://gtgseq/ont-rna004-rna/UHR/raw/PNXRXX240011_reads.blow5.idx
   - md5sum: `e3ea326d300a22008e2821ce10d17649`
+- Also available on ENA: [ERR12997170](https://www.ebi.ac.uk/ena/browser/view/ERR12997170) 
 
 ### basecalls:
 
