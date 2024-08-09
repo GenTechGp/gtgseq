@@ -1,6 +1,6 @@
 # Garvan Institute Long Read Sequencing Benchmark Data
 
-This repository contains the documentation for the long read sequencing benchmark data from the [Genomic Technologies Group at Garvan Institute of Medical Research](https://www.garvan.org.au/research/kinghorn-centre-for-clinical-genomics/research-programs/genomic-technologies).
+This repository contains the documentation for the long read sequencing benchmark data from the [Genomic Technologies Group at Garvan Institute of Medical Research](https://www.garvan.org.au/research/labs-groups/genomic-technologies-lab).
 
 The dataset contains reference samples that will be useful for benchmarking and comparing bioinformatics tools for genome analysis. Examples include: NA12878 (HG001) and NA24385 (HG002) sequenced on an Oxford Nanpopore Technologies (ONT) PromethION using the latest R10.4.1 flowcells; and, UHR RNA (direct-RNA) on an ONT PromethION using the latest RNA004 flowcells.  Raw signal data output by the sequencer is provided for these datasets in [BLOW5 format](https://www.nature.com/articles/s41587-021-01147-4), and can be rebasecalled when basecalling software updates bring accuracy and feature improvements over the years. Raw signal data is not only for rebasecalling, but also can be used for emerging bioinformatics tools that directly analyse raw signal data. We also provide the basecalled data alongside the raw signal data and will continue to provide updated basecalls when there is a major update to the basecalling software. 
 
