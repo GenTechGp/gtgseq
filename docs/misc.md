@@ -1,6 +1,6 @@
 # Miscellaneous
 
-This document briefly describes what is in the [https://gtgseq.s3.amazonaws.com/index.html#misc](https://gtgseq.s3.amazonaws.com/index.html#ont-rna004-rna/) directory. 
+This document briefly describes what is in the [https://gtgseq.s3.amazonaws.com/index.html#misc](https://gtgseq.s3.amazonaws.com/index.html#misc/) directory. 
 Note that you should be familiar with the information documented in the [README](../README.md) and the [datasets](datasets.md) before going through this document.
 
 Misc has two subdirectories:
