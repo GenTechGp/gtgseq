@@ -193,3 +193,21 @@ Make sure to first go through the directory structure, file name conventions and
 - f5c 1.2 CpG methylation frequencies
   - PGXXHX230142_guppy642hac_mm217.bam and PGXXHX230142_guppy642hac.fastq.gz used as input 
   - bgzip compressed methylation freqencies: [PGXXHX230142_guppy642hac_mm217_f5c12_mfreq.tsv.gz](https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA12878/analyses/modcalls/f5c12/PGXXHX230142_guppy642hac_mm217_f5c12_mfreq.tsv.gz)
+
+---
+
+Please cite the following in your publications when using this dataset:
+
+> Bonson Wong, James M Ferguson, Jessica Y Do, Hasindu Gamaarachchi, Ira W Deveson, Streamlining remote nanopore data access with slow5curl, GigaScience, Volume 13, 2024, giae016, https://doi.org/10.1093/gigascience/giae016
+
+```
+@article{10.1093/gigascience/giae016,
+    title="{Streamlining remote nanopore data access with slow5curl}",
+    author={Wong, Bonson and Ferguson, James M and Do, Jessica Y and Gamaarachchi, Hasindu and Deveson, Ira W},
+    journal={GigaScience},
+    volume={13},
+    pages={7},
+    year={2024},
+    publisher={Oxford University Press},
+}
+```
