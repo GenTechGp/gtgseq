@@ -64,3 +64,9 @@ samtools view https://gtgseq.s3.amazonaws.com/ont-r10-dna/NA24385/analyses/basec
 # basecall those selected reads
 buttery-eel -g /path/to/ont-guppy/bin/ --config dna_r9.4.1_450bps_sup.cfg --device 'cuda:all' -i selected_reads.blow5 -o  selected_reads.fastq --port 5555  --use_tcp
 ```
+
+---
+
+Please refer to the following publications for more details:
+
+> Bonson Wong, James M Ferguson, Jessica Y Do, Hasindu Gamaarachchi, Ira W Deveson, Streamlining remote nanopore data access with slow5curl, GigaScience, Volume 13, 2024, giae016, https://doi.org/10.1093/gigascience/giae016
