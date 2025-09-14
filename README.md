@@ -8,7 +8,23 @@ In the future, we plan to extend this open dataset with additional samples, incl
 
 **The samples are detailed [here](docs/data.md), but make sure you first read the sections [Dataset location](#dataset-location), [Structure](#structure).**
 
- 
+Please cite the following in your publications when using this dataset:
+
+> Bonson Wong, James M Ferguson, Jessica Y Do, Hasindu Gamaarachchi, Ira W Deveson, Streamlining remote nanopore data access with slow5curl, GigaScience, Volume 13, 2024, giae016, https://doi.org/10.1093/gigascience/giae016
+
+```
+@article{10.1093/gigascience/giae016,
+    title="{Streamlining remote nanopore data access with slow5curl}",
+    author={Wong, Bonson and Ferguson, James M and Do, Jessica Y and Gamaarachchi, Hasindu and Deveson, Ira W},
+    journal={GigaScience},
+    volume={13},
+    pages={7},
+    year={2024},
+    publisher={Oxford University Press},
+}
+```
+
+
 ## Dataset location
 
 You can browser browse the gtgseq AWS S3 bucket by following [https://gtgseq.s3.amazonaws.com/index.html](https://gtgseq.s3.amazonaws.com/index.html) on your browser. Alternatively, you can use the aws cli:
