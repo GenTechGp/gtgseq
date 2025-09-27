@@ -1,12 +1,14 @@
 # Garvan Institute Long Read Sequencing Benchmark Data
 
-This repository contains the documentation for the long read sequencing benchmark data from the [Genomic Technologies Group at Garvan Institute of Medical Research](https://www.garvan.org.au/research/labs-groups/genomic-technologies-lab).
+- This repository contains the documentation for the long read sequencing benchmark data from the [Genomic Technologies Group at Garvan Institute of Medical Research](https://www.garvan.org.au/research/labs-groups/genomic-technologies-lab). 
+- S3 Bucket location: [https://gtgseq.s3.amazonaws.com/index.html](https://gtgseq.s3.amazonaws.com/index.html) <br>
+- **The samples are detailed [here](docs/data.md), but make sure you first read the sections [Dataset location](#dataset-location), [Structure](#structure).**
 
-The dataset contains reference samples that will be useful for benchmarking and comparing bioinformatics tools for genome analysis. Examples include: NA12878 (HG001) and NA24385 (HG002) sequenced on an Oxford Nanpopore Technologies (ONT) PromethION using the latest R10.4.1 flowcells; and, UHR RNA (direct-RNA) on an ONT PromethION using the latest RNA004 flowcells.  Raw signal data output by the sequencer is provided for these datasets in [BLOW5 format](https://www.nature.com/articles/s41587-021-01147-4), and can be rebasecalled when basecalling software updates bring accuracy and feature improvements over the years. Raw signal data is not only for rebasecalling, but also can be used for emerging bioinformatics tools that directly analyse raw signal data. We also provide the basecalled data alongside the raw signal data and will continue to provide updated basecalls when there is a major update to the basecalling software. 
+## Introduction
 
-In the future, we plan to extend this open dataset with additional samples, including sequencing runs from vendors other than ONT. 
+The dataset contains reference samples that will be useful for benchmarking and comparing bioinformatics tools for genome analysis. Examples include: NA12878 (HG001) and NA24385 (HG002) sequenced on an Oxford Nanpopore Technologies (ONT) PromethION using the latest R10.4.1 flowcells; and, UHR RNA (direct-RNA) on an ONT PromethION using the latest RNA004 flowcells.  Raw signal data output by the sequencer is provided for these datasets in [BLOW5 format](https://www.nature.com/articles/s41587-021-01147-4), and can be rebasecalled when basecalling software updates bring accuracy and feature improvements over the years. 
 
-**The samples are detailed [here](docs/data.md), but make sure you first read the sections [Dataset location](#dataset-location), [Structure](#structure).**
+## Citation
 
 Please cite the following in your publications when using this dataset:
 
