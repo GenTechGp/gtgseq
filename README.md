@@ -26,6 +26,7 @@ Please cite the following in your publications when using this dataset:
 }
 ```
 
+Every BLOW5 file in this repository is also deposited to SRA/ENA for which the accession numbers are given [here](docs/data.md). This way, the dataset will still be available even if this S3 bucket cease to exist.  
 
 ## Dataset location
 
