@@ -4,6 +4,7 @@ Make sure to first go through the directory structure, file name conventions and
 
 ## Table of Contents
 - [ONT R10.4.1 5kHz chemistry - DNA data](#ont-r1041-5khz-chemistry---dna-data)
+  - [NA24385 (HG002) PromethION data (~40X, longer reads, enzyme E8.2.1)](#na24385-hg002-promethion-data-40x-longer-reads-enzyme-e821)
   - [NA24385 (HG002) PromethION data (~40X)](#na24385-hg002-promethion-data-40x)
   - [NA24385 (HG002) PromethION data (~20X)](#na24385-hg002-promethion-data-20x)
 - [ONT RNA004 chemistry - RNA data](#ont-rna004-chemistry---rna-data)
@@ -11,6 +12,45 @@ Make sure to first go through the directory structure, file name conventions and
 - [ONT R10.4.1 4kHz chemistry - DNA data](#ont-r1041-5khz-chemistry---dna-data)
   - [NA24385 (HG002) PromethION data (~30X)](#na24385-hg002-promethion-data-30x)
   - [NA12878 (HG001) PromethION data (~20X)](#na12878-hg001-promethion-data-20x)
+
+
+## NA24385 (HG002) PromethION data (~40X, longer reads, enzyme E8.2.1) 
+
+- Info: HG002 (Coriell Institute, GM24385) was cultured in RPMI1640 (Gibco, 11875093) with 15% fetal bovine serum (Bovogen, SFBS-AU) at 37°C with 5% CO2. DNA was extracted using Nanobind CBB kit (PacBio, 102-301-900). DNA was sheared to ~65 kb using the Megaruptor 3 (Diagenode) and  fragments <10 kb were removed using SRE kit (PacBio, 102-208-300). Libraries prepared using SQK-LSK114 (with enzyme E8.2.1) and sequenced on a R10.4.1 flow cell (Oxford Nanopore Technologies) at 5kHz sampling rate.
+
+- Notes: the complete dataset with 6.9M reads (119.5 Gbases).
+- Reads lengths: 9.0 kbases median, 17.2 kbases mean, 697.4 kbases max
+- Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385_e821/
+
+### raw signal data:
+- [BLOW5](https://www.nature.com/articles/s41587-021-01147-4) file 
+  - direct link: [PGXXSX240470_reads.blow5](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_e821/raw/PGXXSX240470_reads.blow5)  
+  - s3 location: s3://gtgseq/ont-r10-5khz-dna/NA24385_e821/raw/PGXXSX240470_reads.blow5
+  - md5sum: `ebc003e549870344e194ea624813dd3e`
+- BLOW5 index
+  - direct link: [PGXXSX240470_reads.blow5.idx](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_e821/raw/PGXXSX240470_reads.blow5.idx) 
+  - s3 location: s3://gtgseq/ont-r10-5khz-dna/NA24385_e821/raw/PGXXSX240470_reads.blow5.idx
+  - md5sum: `3e7ef8627f2179e77510699552680f02`
+- Also available on ENA: [ERR14751980](https://www.ebi.ac.uk/ena/browser/view/ERR14751980) 
+
+### basecalls:
+
+- Dorado 0.8.3 super accuracy
+  - basecalled with Dorado 0.8.3 through [slow5-dorado](https://github.com/hiruna72/slow5-dorado/releases/tag/v0.8.3). 
+  - model: dna_r10.4.1_e8.2_400bps_sup@v5.0.0
+  - only reads that passed the qscore filter threshold 10 are included
+    - FASTQ: [PGXXSX240470_dorado083sup.fastq.gz](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_e821/analyses/basecalls/dorado083sup/PGXXSX240470_dorado083sup.fastq.gz)
+    - FASTQ index:  [PGXXSX240470_dorado083sup.fastq.gz.gzi](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_e821/analyses/basecalls/dorado083sup/PGXXSX240470_dorado083sup.fastq.gz.gzi) and [PGXXSX240470_dorado083sup.fastq.gz.fai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_e821/analyses/basecalls/dorado083sup/PGXXSX240470_dorado083sup.fastq.gz.fai)
+    - FASTQ is also available on ENA: [ERR14758575](https://www.ebi.ac.uk/ena/browser/view/ERR14758575) 
+  - mapped with minimap2 2.26 against hg38noAlt with map-ont preset
+    - BAM: [PGXXSX240470_dorado083sup_mm226.bam](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_e821/analyses/basecalls/dorado083sup/PGXXSX240470_dorado083sup_mm226.bam)
+    - BAM index: [PGXXSX240470_dorado083sup_mm226.bam.bai](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_e821/analyses/basecalls/dorado083sup/PGXXSX240470_dorado083sup_mm226.bam.bai)
+
+### modcalls
+
+- f5c 1.5 CpG methylation frequencies
+  - PGXXSX240470_dorado083sup_mm226.bam and PGXXSX240470_dorado083sup.fastq.gz used as input 
+  - bgzip compressed methylation freqencies: [PGXXSX240470_dorado083sup_mm226_f5c15_mfreq.tsv.gz](https://gtgseq.s3.amazonaws.com/ont-r10-5khz-dna/NA24385_e821/analyses/modcalls/f5c15/PGXXSX240470_dorado083sup_mm226_f5c15_mfreq.tsv.gz)	
 
 
 ## NA24385 (HG002) PromethION data (~40X)
