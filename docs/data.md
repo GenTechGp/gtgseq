@@ -20,7 +20,7 @@ Make sure to first go through the directory structure, file name conventions and
 
 - Notes: the complete dataset with 6.9M reads (119.5 Gbases).
 - Reads lengths: 9.0 kbases median, 17.2 kbases mean, 697.4 kbases max
-- Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385_e821/
+- Browse: [https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385_e821/](https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385_e821/)
 
 ### raw signal data:
 - [BLOW5](https://www.nature.com/articles/s41587-021-01147-4) file 
@@ -58,7 +58,7 @@ Make sure to first go through the directory structure, file name conventions and
 - Info: HG002 (Coriell Institute, GM24385) was cultured in RPMI1640 (Gibco, 11875093) with 15% fetal bovine serum (Bovogen, SFBS-AU) at 37°C with 5% CO2. DNA was extracted using Nanobind CBB kit (PacBio, 102-301-900). DNA was sheared to ~33 kb using the Megaruptor 3 (Diagenode) and libraries prepared using SQK-LSK114 and sequenced on a R10.4.1 flow cell (Oxford Nanopore Technologies) at 5kHz sampling rate to generate ~40X genome coverage.
 - Notes: the complete dataset with 18.8M reads (130.494 Gbases).
 - Reads lengths: 2.7 kbases median, 6.9 kbases mean, 854.8 kbases max
-- Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385_2/
+- Browse: [https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385_2/](https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385_2/)
 
 ### raw signal data:
 - [BLOW5](https://www.nature.com/articles/s41587-021-01147-4) file 
@@ -95,7 +95,7 @@ Make sure to first go through the directory structure, file name conventions and
 - Info: sheared DNA libraries (~25Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 5kHz sampling rate was used to generate ~20X genome coverage.
 - Notes: the complete dataset with 12.5M reads (51.211 Gbases).
 - Reads lengths: 1.5 kbases median, 4.1 kbases mean, 288.9 kbases max
-- Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385/
+- Browse: [https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385/](https://gtgseq.s3.amazonaws.com/index.html#ont-r10-5khz-dna/NA24385/)
 
 ### raw signal data:
 - [BLOW5](https://www.nature.com/articles/s41587-021-01147-4) file 
@@ -133,7 +133,7 @@ Make sure to first go through the directory structure, file name conventions and
 - Info: Universal human reference RNA (300 ng polyA enriched RNA) was prepared using the SQK-RNA004 kit from Nanopore. Prepared library (48 ng) was loaded onto a FLO-PRO004RA flow cell.
 - Notes: the complete dataset with 15.4M reads (17.554 Gbases).
 - Reads lengths: 864 bases median, 1.137 kbases mean, 321 kbases max
-- Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-rna004-rna/UHR/
+- Browse: [https://gtgseq.s3.amazonaws.com/index.html#ont-rna004-rna/UHR/](https://gtgseq.s3.amazonaws.com/index.html#ont-rna004-rna/UHR/)
 
 ### raw signal data:
 - [BLOW5](https://www.nature.com/articles/s41587-021-01147-4) file 
@@ -165,7 +165,7 @@ Make sure to first go through the directory structure, file name conventions and
 - Info: sheared DNA libraries (~17Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 4KHz sampling rate was used to generate ~30X genome coverage.
 - Notes: the complete dataset with 15.3M reads (102.2 Gbases). Also available on SRA: [SRS16575602](https://www.ncbi.nlm.nih.gov/sra/?term=SRS16575602).
 - Reads lengths: 6.5 kbases median, 7.3 kbases mean, 636.6 kbases max
-- Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA24385/
+- Browse: [https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA24385/](https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA24385/)
 
 ### raw signal data:
 - [BLOW5](https://www.nature.com/articles/s41587-021-01147-4) file 
@@ -202,7 +202,7 @@ Make sure to first go through the directory structure, file name conventions and
 - Info: Sheared DNA libraries (~30Kb) were prepared using the ONT LSK114 ligation library prep and a R10.4.1 flow cell at 4KHz sampling rate was used to generate ~30X genome coverage.
 - Notes:  the complete dataset with ~11M reads (70.5 Gbases)
 - Reads lengths: 4.5 kbases median, 7.6 kbases mean, 235.1 kbases max
-- Browse: https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA12878/
+- Browse: [https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA12878/](https://gtgseq.s3.amazonaws.com/index.html#ont-r10-dna/NA12878/)
 
 ### raw signal data:
 
